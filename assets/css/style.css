@@ -1,0 +1,29 @@
+#trivia-game{
+    background-image: url("../images/rap.jpg");
+}
+h4{
+    text-align: center;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+form{
+    text-align: center;
+    color: white;
+}
+#countdown_value{
+    color:white; 
+    text-align: center;
+}
+#submit{
+    text-align:center;
+    align-content:center;
+}
+#reset{
+    text-align:center;
+}
+#trivia-questions{
+    text-align: center;
+}

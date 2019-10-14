@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
     <title>Trivia Game</title>
 </head>
 
@@ -21,14 +22,14 @@
         <div id="countdown_timer">
             <h2>You have</h2>
             <br>
-            <h2 id="countdown_value"></h2>
+            <h2 id="countdown_value">60</h2>
             <br>
             <h2>Seconds to go!</h2>
 
         </div>
         <br>
         <br>
-        <div id="trivia-questions ">
+        <div id="trivia-questions">
             <h4>The deluxe edition of the 30 Seconds To Mars album, "This Is War" (2010) featured the track "Hurricane
                 2.0", a version of the "Hurricane" track with input from which rapper?</h4>
             <form>
@@ -37,20 +38,21 @@
                 <input type="radio" name="rap_question_1" value="Twista"> Twista<br>
                 <input type="radio" name="rap_question_1" value="Twista"> Pusha T<br>
             </form>
+            <br>
             <h4>What record label did Hopsin sign with before he created Funk Volume with Dame Ritter?</h4>
             <form>
                 <input type="radio" name="rap_question_2" value="Island Def Jam Records" checked>Island Def Jam
                 Records<br>
                 <input type="radio" name="rap_question_2" value=" Aftermath Entertainment">Aftermath Entertainment<br>
                 <input type="radio" name="rap_question_2" value="Ruthless Records">Ruthless Records<br>
-
             </form>
+            <br>
             <h4>Who is this legendary Memphis rap group that won an academy award for best original song in 2006?</h4>
             <form>
                 <input type="radio" name="rap_question_3" value="male" checked>Juicy J<br>
                 <input type="radio" name="rap_question_3" value="Yo Gotti">Yo Gotti<br>
                 <input type="radio" name="rap_question_3" value="Three 6 Mafia">Three 6 Mafia<br>
-                <input type="radio" name="rap_question_3" value="Drumma Boy">Drumma Boy
+                <input type="radio" name="rap_question_3" value="Drumma Boy">Drumma Boy<br>
             </form>
             <!--<h4></h4>
             <form>
@@ -63,8 +65,18 @@
                 <input type="radio" name="gender" value="male" checked> Male<br>
                 <input type="radio" name="gender" value="female"> Female<br>
                 <input type="radio" name="gender" value="other"> Other
-            </form>-->
-
+            </form>
+        
+            Section is commented out in order to test and make sure i can test with a small subset of the score versus multiple values
+        
+        
+        
+            -->
+            <br>
+            <button id="submit">Submit</button>
+            <br>
+            <br>
+            <button id="reset" onclick="reset()">Reset</button>
         </div>
     </div>
 
